@@ -79,6 +79,9 @@ which can be activated for your Python environment using:
 <code> conda activate torch_segment </code>
 
 --------------------------------------------------------------------------------------------------------
+
+## Training the Models
+
 You can train the models using the shallow network, my_FCN, using the following command:
 
 <code> python -m seg_code.train -m my_fcn </code>
@@ -93,6 +96,8 @@ To train the DeepLab (with pretrained ResNet-101), the code is:
 
 ---------------------------------------------------------------------
 
+## Visualizing the Cityscapes Dataset
+
 To do some visualization:
 
 Here is the code you can run before training the model to see a snapshot of what the dataset looks like:
@@ -100,6 +105,8 @@ Here is the code you can run before training the model to see a snapshot of what
 <code> python -m seg_code.utils  </code>
 
 _____________________________________________________________________
+## Logging on TensorBoard
+
 If you want to use Tensorboard, here is some extra code:
 
 <code> python -m seg_code.train -m my_fcn --log_dir myfcn_test -n 500 </code>
@@ -112,10 +119,10 @@ the message you'll receive will give you something like:
 
 <code> http://your-Laptop-name:6006/ </code>
 
-click on the address you get and open it in a web browser. See the interactive tensorboard. Done!
+click on the address you get and open it in a web browser. See the interactive tensorboard. Done! :)
 
 ____________________________________________________________________________________
-## Most Helpful References:
+## References:
 
 Chen, L.-C., Zhu, Y., Papandreou, G., Schroff, F., & Adam, H. (2018). Encoder-Decoder with Atrous Separable Convolution for Semantic Image Segmentation. ArXiv. https://arxiv.org/pdf/1802.02611.pdf
 
