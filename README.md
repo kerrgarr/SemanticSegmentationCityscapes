@@ -7,15 +7,15 @@ Download the dataset here:
 
 Given that these are large files of several or more Gigabytes, it is important for the practitioner to judiciously select only the data needed for the specific task of interest. The focus of this study is to test the performance of different models for semantic segmentation, so the following datasets (file size in paratheses) were downloaded: **gtFine_trainvaltest.zip** (241MB) and **leftmg8bit_trainvaltest.zip** (11GB). 
 
-From these datasets, a smaller subset was created from the Hamburg data (training data) and Frankfurt data (validation data). 
+The gtFine_trainvaltest.zip dataset contains multiple annotations. Of these files, *gtFine_labellds were the files used for labels and also for creating the segmentation masks. 
 
-The gtFine_trainvaltest.zip dataset contains multiple annotations with the extensions: *gtFine_color.png, *gtFine_instancelds.png, *gtFine_labellds.png, *gtFine_polygons.json. 
-
-Of these files, *gtFine_labellds were the files used for labels and also for creating the segmentation masks. The leftmg8bit_trainvaltest.zip dataset contains the original 2048x1024 images of the different street scenes with extension names *leftlmg8bit.png. 
+The leftmg8bit_trainvaltest.zip dataset contains the original 2048x1024 images of the different street scenes with extension names *leftlmg8bit.png. 
 
 (For this task, object detection and classification by color were not explored so the *gtFine_polygons.json and *gtFine_color.png files were never used, nor were the *gtFine_instancelds.png files since we focus only on semantic segmentation in this current code.)
 
 After unzipping these files, you will find the subdirectories: **train**, **val**, and **test**. We focus on the files contained in train and val folders.
+
+From these datasets, a smaller subset was created from the Hamburg data (in train/Hamburg/) and Frankfurt data (in val/Frankfurt/). 
 
  Your directory structure should look like this (for logging later on, optionally add a folder called myfcn_test or whichever name you prefer.)
 
