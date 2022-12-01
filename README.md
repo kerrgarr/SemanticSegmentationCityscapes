@@ -44,6 +44,11 @@ SemanticSegmentationCityscapes/
 
 This work is focused on exploring different image segmentation models using a well-understood and well-annotated dataset. Moroever, this work is designed for running on modest resources (in my case, a gaming laptop with 1 GPU). The computational details are summarized in Table 1 below:
 
+| Syntax      | Description | Test Text     |
+| :---        |    :----:   |          ---: |
+| Header      | Title       | Here's this   |
+| Paragraph   | Text        | And more      |
+
 **Table 1. Computational Methods**
 
 | 1 GPU	 | NVIDIA GeForce GTX 1660 Ti |
