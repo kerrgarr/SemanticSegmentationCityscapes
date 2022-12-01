@@ -45,16 +45,14 @@ SemanticSegmentationCityscapes/
 This work is focused on exploring different image segmentation models using a well-understood and well-annotated dataset. Moroever, this work is designed for running on modest resources (in my case, a gaming laptop with 1 GPU). The computational details are summarized in Table 1 below:
 
 
-**Table 1. Computational Methods**
-
-| 1 GPU	        | NVIDIA GeForce GTX 1660 Ti                                               |
+| Table 1          | Computational Details                                                 |
+| ---------        |  --------------------                                                 |
+| Hardware	       |  1 GPU NVIDIA GeForce GTX 1660 Ti                                     |
 | Framework	    | PyTorch 1.8.1 (Paszke & et al, 2019)                                     |
 | Number of Epochs |	500                                                                   |
 | Batch Size	   |   8                                                                      |
 | Learning rate	|  1x10-3                                                                  |
-
 | Optimizer	    | Adam optimizer with weight decay of 1 x10-5 (Kingma & Ba, 2014)          |
-| :---          |   :---                                                                   |
 | Criterion	    | Cross Entropy Loss with Focal Loss (Lin et al., 2018)                    |
 | Dataset	      | Cityscapes dataset (using only the Hamburg and Frankfurt subsets)        |
 | Evaluation Metrics |	Global accuracy, average accuracy and Intersection-over-Union (IoU) |
