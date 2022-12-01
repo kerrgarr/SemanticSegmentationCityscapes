@@ -104,13 +104,16 @@ Here is the code you can run before training the model to see a snapshot of what
 
 <code> python -m seg_code.utils  </code>
 
-Running this code will create three figures
+Running this code will create three figures:
 
 ![image info](./pics/Figure_1.png)
+Figure 1. Example files of the Cityscapes dataset. The original images are 2048x1024 size and are labeled as *leftlmg8bit.png; while the labels are given *gtFine_labellds.png. 
 
 ![image info](./pics/Figure_2.png)
+Figure 2. Pixel Distribution of the Different Classes in the Training Dataset (Based on 20 Classes). The category “Unlabelled” is the sum of 14 classes that were pooled into the unlabelled category, hence why it has a relatively large percentage of pixel counts. The classes labeled ‘road’, ‘building’, ‘vegetation’, and ‘car’ also have a large share of the total number of pixels in the training dataset. The labels ‘sidewalk’ and ‘sky’ each make up roughly 5% of the dataset.
 
 ![image info](./pics/Figure_3.png)
+Figure 3. Data augmentation, including resizing, random cropping, and color jitter, each individually applied to the data and altogether in “All”.
 _____________________________________________________________________
 ## Logging on TensorBoard
 
