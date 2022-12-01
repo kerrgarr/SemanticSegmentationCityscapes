@@ -44,28 +44,33 @@ SemanticSegmentationCityscapes/
 
 This code is simplified and designed for running on modest resources. The computational details are summarized in the table below:
 
+	| Syntax | Description |
+| ----------- | ----------- |
+| Header | Title |
+| Paragraph | Text |
+
 Table 1. Computational Methods
-_______ | ______________
-1 GPU	 | NVIDIA GeForce GTX 1660 Ti
-_______ | ______________
-Framework	| PyTorch 1.8.1 (Paszke & et al, 2019)
-_______ | ______________
-Number of Epochs |	500 
-_______ | ______________
-Batch Size	| 8 
-_______ | ______________
-Learning rate	| 1x10-3
-_______ | ______________
-Optimizer	| Adam optimizer with weight decay of 1 x10-5 (Kingma & Ba, 2014) 
-_______ | ______________
-Criterion	| Cross Entropy Loss with Focal Loss (Lin et al., 2018)
-_______ | ______________
-Models	| my_FCN – built-from-scratch UNET (this work), U-Net – (Ronneberger et al., 2015), DeepLab+ (ResNet101) – (L.-C. Chen et al., 2018; He et al., 2016)
-_______ | ______________
-Dataset	| Cityscapes dataset (using only the Hamburg and Frankfurt subsets) (Cordts, 2022; Cordts et al., 2016)
-_______ | ______________
-Evaluation Metrics |	Global accuracy, average accuracy and Intersection-over-Union (IoU)
-	_______ | ______________
+| ----------- | ----------- |
+| 1 GPU	 | NVIDIA GeForce GTX 1660 Ti |
+| ----------- | ----------- |
+| Framework	| PyTorch 1.8.1 (Paszke & et al, 2019) |
+| ----------- | ----------- |
+| Number of Epochs |	500 |
+| ----------- | ----------- |
+| Batch Size	| 8 |
+| ----------- | ----------- |
+| Learning rate	| 1x10-3 |
+| ----------- | ----------- |
+| Optimizer	| Adam optimizer with weight decay of 1 x10-5 (Kingma & Ba, 2014) |
+| ----------- | ----------- |
+| Criterion	| Cross Entropy Loss with Focal Loss (Lin et al., 2018) |
+| ----------- | ----------- |
+| Models	| my_FCN – built-from-scratch UNET (this work), U-Net – (Ronneberger et al., 2015), DeepLab+ (ResNet101) – (L.-C. Chen et al., 2018; He et al., 2016) |
+| ----------- | ----------- |
+| Dataset	| Cityscapes dataset (using only the Hamburg and Frankfurt subsets) (Cordts, 2022; Cordts et al., 2016) |
+| ----------- | ----------- |
+| Evaluation Metrics |	Global accuracy, average accuracy and Intersection-over-Union (IoU) |
+| ----------- | ----------- |
 
 
 
