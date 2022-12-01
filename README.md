@@ -42,9 +42,9 @@ SemanticSegmentationCityscapes/
  ---------------------------------------------------------------------------------------
 ## Objectives of this code
 
-This code is simplified and designed for running on modest resources. The computational details are summarized in the table below:
+This work is focused on exploring different image segmentation models using a well-understood and well-annotated dataset. Moroever, this work is designed for running on modest resources (in my case, a gaming laptop with 1 GPU). The computational details are summarized in Table 1 below:
 
-Table 1. Computational Methods
+**Table 1. Computational Methods**
 | 1 GPU	 | NVIDIA GeForce GTX 1660 Ti |
 | Framework	| PyTorch 1.8.1 (Paszke & et al, 2019) |
 | Number of Epochs |	500 |
@@ -52,16 +52,15 @@ Table 1. Computational Methods
 | Learning rate	| 1x10-3 |
 | Optimizer	| Adam optimizer with weight decay of 1 x10-5 (Kingma & Ba, 2014) |
 | Criterion	| Cross Entropy Loss with Focal Loss (Lin et al., 2018) |
-| Models	| my_FCN – (this work); U-Net – (Ronneberger et al., 2015); DeepLabV3+ (ResNet101) – (L.-C. Chen et al., 2018; He et al., 2016) |
+| Models	| my_FCN – (this work), U-Net – (Ronneberger et al., 2015), DeepLabV3+ (ResNet101) – (L.-C. Chen et al., 2018; He et al., 2016) |
 | Dataset	| Cityscapes dataset (using only the Hamburg and Frankfurt subsets) (Cordts, 2022; Cordts et al., 2016) |
 | Evaluation Metrics |	Global accuracy, average accuracy and Intersection-over-Union (IoU) |
 
 
-
 We want to 
-1. Visualize the dataset
+1. Visualize the Cityscapes dataset
 2. Practice data pre-processing techniques (data augmentation)
-3. Train an image segmentation network to accurately classify objects appearing in the street scenes (cars, footpath, road, pedestrians, etc.). 
+3. Train a simple image segmentation network to accurately classify objects appearing in the street scenes (cars, footpath, road, pedestrians, etc.). 
 
 _________________________________________________________________________________________
 ## Setting up your environment with Conda
