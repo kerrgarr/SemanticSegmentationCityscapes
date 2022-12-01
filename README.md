@@ -61,11 +61,11 @@ This work is focused on exploring different image segmentation models using a we
 We want to 
 1. Visualize the Cityscapes dataset
 2. Practice data pre-processing techniques (data augmentation)
-3. Train a simple image segmentation network (my_FCN) to accurately classify objects appearing in the street scenes (cars, footpath, road, pedestrians, etc.). 
-4. Compare this network to UNet (shown in figure below) and DeepLabV3+
+3. Train a simple image segmentation network (my_FCN, Figure 1b) to accurately classify objects appearing in the street scenes (cars, footpath, road, pedestrians, etc.). 
+4. Compare this network to UNet (Figure 1a) and DeepLabV3+
 
 ![image info](./pics/Figure_4.png)
-Figure 4. Structures of different U-Net architectures. a) The U-Net architecture. b) my_FCN architecture designed in this work. Each architecture consists of a contracting path (left side), a bottleneck (bottom), and an expansive path (right side). Each blue block represents a multi-channel feature map with the number of channels denoted on top of the box. The height (H) and width (W) size is provided at the lower edge of the box. Grey boxes in the expansion path represent cropped and concatenated feature maps. The horizontal and vertical arrows denote downsampling (“MaxPool2d”), upsampling (“ConvTranspose2D”), 3x3 convolutional (“Double Conv Layers”), 1x1 convolutional (“Conv2D”), and concatenating (“Crop and concatenate”) operations. 
+Figure 1. Structures of different U-Net architectures. a) The U-Net architecture. b) my_FCN architecture designed in this work. Each architecture consists of a contracting path (left side), a bottleneck (bottom), and an expansive path (right side). Each blue block represents a multi-channel feature map with the number of channels denoted on top of the box. The height (H) and width (W) size is provided at the lower edge of the box. Grey boxes in the expansion path represent cropped and concatenated feature maps. The horizontal and vertical arrows denote downsampling (“MaxPool2d”), upsampling (“ConvTranspose2D”), 3x3 convolutional (“Double Conv Layers”), 1x1 convolutional (“Conv2D”), and concatenating (“Crop and concatenate”) operations. 
 _________________________________________________________________________________________
 ## Setting up your environment with Conda
 
@@ -110,13 +110,13 @@ Here is the code you can run before training the model to see a snapshot of what
 Running this code will create three figures:
 
 ![image info](./pics/Figure_1.png)
-Figure 1. Example files of the Cityscapes dataset. The original images are 2048x1024 size and are labeled as *leftlmg8bit.png; while the labels are given *gtFine_labellds.png. 
+Figure 2. Example files of the Cityscapes dataset. The original images are 2048x1024 size and are labeled as *leftlmg8bit.png; while the labels are given *gtFine_labellds.png. 
 
 ![image info](./pics/Figure_2.png)
-Figure 2. Pixel Distribution of the Different Classes in the Training Dataset (Based on 20 Classes). The category “Unlabelled” is the sum of 14 classes that were pooled into the unlabelled category, hence why it has a relatively large percentage of pixel counts. The classes labeled ‘road’, ‘building’, ‘vegetation’, and ‘car’ also have a large share of the total number of pixels in the training dataset. The labels ‘sidewalk’ and ‘sky’ each make up roughly 5% of the dataset.
+Figure 3. Pixel Distribution of the Different Classes in the Training Dataset (Based on 20 Classes). The category “Unlabelled” is the sum of 14 classes that were pooled into the unlabelled category, hence why it has a relatively large percentage of pixel counts. The classes labeled ‘road’, ‘building’, ‘vegetation’, and ‘car’ also have a large share of the total number of pixels in the training dataset. The labels ‘sidewalk’ and ‘sky’ each make up roughly 5% of the dataset.
 
 ![image info](./pics/Figure_3.png)
-Figure 3. Data augmentation, including resizing, random cropping, and color jitter, each individually applied to the data and altogether in “All”.
+Figure 4. Data augmentation, including resizing, random cropping, and color jitter, each individually applied to the data and altogether in “All”.
 _____________________________________________________________________
 ## Logging on TensorBoard
 
