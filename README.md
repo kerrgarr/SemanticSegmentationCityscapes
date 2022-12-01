@@ -44,10 +44,6 @@ SemanticSegmentationCityscapes/
 
 This work is focused on exploring different image segmentation models using a well-understood and well-annotated dataset. Moroever, this work is designed for running on modest resources (in my case, a gaming laptop with 1 GPU). The computational details are summarized in Table 1 below:
 
-| Syntax      | Description | Test Text     |
-| :---        |    :----:   |          ---: |
-| Header      | Title       | Here's this   |
-| Paragraph   | Text        | And more      |
 
 **Table 1. Computational Methods**
 
@@ -59,7 +55,8 @@ This work is focused on exploring different image segmentation models using a we
 | Learning rate	| 1x10-3 |
 | Optimizer	| Adam optimizer with weight decay of 1 x10-5 (Kingma & Ba, 2014) |
 | Criterion	| Cross Entropy Loss with Focal Loss (Lin et al., 2018) |
-| Dataset	| Cityscapes dataset (using only the Hamburg and Frankfurt subsets) (Cordts et al., 2016) |
+
+| Dataset	| Cityscapes dataset (using only the Hamburg and Frankfurt subsets)|
 | Evaluation Metrics |	Global accuracy, average accuracy and Intersection-over-Union (IoU) |
 
 
