@@ -102,7 +102,7 @@ Here is the code you can run before training the model to see a snapshot of what
 _____________________________________________________________________
 If you want to use Tensorboard, here is some extra code:
 
-<code> python -m seg_code.train -m my_fcn --log_dir myfcn_test -n 1000 </code>
+<code> python -m seg_code.train -m my_fcn --log_dir myfcn_test -n 500 </code>
 
 followed by:
 
