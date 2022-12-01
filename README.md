@@ -52,9 +52,9 @@ Table 1. Computational Methods
 | Learning rate	| 1x10-3 |
 | Optimizer	| Adam optimizer with weight decay of 1 x10-5 (Kingma & Ba, 2014) |
 | Criterion	| Cross Entropy Loss with Focal Loss (Lin et al., 2018) |
-| Models	| my_FCN – built-from-scratch UNET (this work) |
-|               | U-Net – (Ronneberger et al., 2015) |
-|               | DeepLab+ (ResNet101) – (L.-C. Chen et al., 2018; He et al., 2016) |
+| Models	| my_FCN – built-from-scratch UNET (this work) 
+           U-Net – (Ronneberger et al., 2015) 
+           DeepLab+ (ResNet101) – (L.-C. Chen et al., 2018; He et al., 2016) |
 | Dataset	| Cityscapes dataset (using only the Hamburg and Frankfurt subsets) (Cordts, 2022; Cordts et al., 2016) |
 | Evaluation Metrics |	Global accuracy, average accuracy and Intersection-over-Union (IoU) |
 
