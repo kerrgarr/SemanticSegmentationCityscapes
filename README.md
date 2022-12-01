@@ -61,8 +61,11 @@ This work is focused on exploring different image segmentation models using a we
 We want to 
 1. Visualize the Cityscapes dataset
 2. Practice data pre-processing techniques (data augmentation)
-3. Train a simple image segmentation network to accurately classify objects appearing in the street scenes (cars, footpath, road, pedestrians, etc.). 
+3. Train a simple image segmentation network (my_FCN) to accurately classify objects appearing in the street scenes (cars, footpath, road, pedestrians, etc.). 
+4. Compare this network to UNet (shown in figure below) and DeepLabV3+
 
+![image info](./pics/Figure_4.png)
+Figure 4. Structures of different U-Net architectures. a) The U-Net architecture. b) my_FCN architecture designed in this work. Each architecture consists of a contracting path (left side), a bottleneck (bottom), and an expansive path (right side). Each blue block represents a multi-channel feature map with the number of channels denoted on top of the box. The height (H) and width (W) size is provided at the lower edge of the box. Grey boxes in the expansion path represent cropped and concatenated feature maps. The horizontal and vertical arrows denote downsampling (“MaxPool2d”), upsampling (“ConvTranspose2D”), 3x3 convolutional (“Double Conv Layers”), 1x1 convolutional (“Conv2D”), and concatenating (“Crop and concatenate”) operations. 
 _________________________________________________________________________________________
 ## Setting up your environment with Conda
 
