@@ -23,7 +23,7 @@ From these datasets, a smaller subset was created from the Hamburg data (in trai
 SemanticSegmentationCityscapes/
 
    myfcn_test/
-   data/
+   small_dataset/
       train/
          (files from train/Hamburg folder with the following extensions:)
          *gtFine_labellds.png
