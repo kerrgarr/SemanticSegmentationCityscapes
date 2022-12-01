@@ -94,4 +94,16 @@ the message you'll receive will give you something like:
 
 click on the address you get and open it in a web browser. See the interactive tensorboard. Done!
 
+____________________________________________________________________________________
+## Most Helpful References:
+
+Chen, L.-C., Zhu, Y., Papandreou, G., Schroff, F., & Adam, H. (2018). Encoder-Decoder with Atrous Separable Convolution for Semantic Image Segmentation. ArXiv. https://arxiv.org/pdf/1802.02611.pdf
+
+Ronneberger, O., Fischer, P., & Brox, T. (2015). U-net: Convolutional networks for biomedical image segmentation. International Conference on Medical Image Computing and Computer-Assisted Intervention, 234–241.
+
+jfzhang95. (2018). PyTorch DeepLab-XCeption. GitHub. https://github.com/jfzhang95/pytorch-deeplab-xception
+
+milesial. (2021). Pytorch-Unet. Github. https://github.com/milesial/Pytorch-UNet
+
+Sai Ajay Daliparthi, V. S. (2021a). The Ikshana Hypothesis of Human Scene Understanding. Github. https://github.com/dvssajay/The-Ikshana-Hypothesis-of-Human-Scene-Understanding
 
