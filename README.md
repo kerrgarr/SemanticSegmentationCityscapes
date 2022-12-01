@@ -134,6 +134,10 @@ the message you'll receive will give you something like:
 
 click on the address you get and open it in a web browser. See the interactive tensorboard. Done! :)
 
+The results that I've collected according to the details in Table 1 are shown in Figure 5. (These data and images were taken from TensorBoard results.)
+
+![image info](./pics/Figure_5all_deep.png)
+Figure 5. Model performance. Comparison of segmentation maps predicted for each of the models (DeepLabV3+, U-Net, and my_FCN) after 500 epochs are shown in the left-side panel. The right-side panel shows the evolution of the training loss (top right) and IoU values on the validation data (bottom right).
 ____________________________________________________________________________________
 ## References:
 
