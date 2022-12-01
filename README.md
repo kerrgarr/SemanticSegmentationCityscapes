@@ -104,6 +104,13 @@ Here is the code you can run before training the model to see a snapshot of what
 
 <code> python -m seg_code.utils  </code>
 
+Running this code will create three figures
+
+![image info](./pics/Figure_1.png)
+
+![image info](./pics/Figure_2.png)
+
+![image info](./pics/Figure_3.png)
 _____________________________________________________________________
 ## Logging on TensorBoard
 
