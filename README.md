@@ -1,5 +1,15 @@
 # Image Segmentation on small subset of Cityscapes
 
+## Objective
+
+The motivation for this project is to explore various different models for semantic segmentation using modest computational resources (i.e., a gaming laptop). For this effort, I have explored a built-from-scratch Unet that I constructed and compared these results to various other model architectures, including a popular reference UNet model, and DeepLabV3+ (with ResNet-101 encoder network). 
+
+Another crucial piece of this study was to find a well-annotated multi-class dataset suitable for semantic segmentation. The Cityscapes dataset was chosen because it is well-understood, well-annotated, and easy to download free of charge (details are given below). 
+
+___________________________________
+
+## Cityscapes Dataset
+
 
 Download the dataset here: 
 
@@ -40,7 +50,7 @@ SemanticSegmentationCityscapes/
       special_transforms.py
    ```
  ---------------------------------------------------------------------------------------
-## Objectives of this code
+## Computational Details
 
 This work is focused on exploring different image segmentation models using a well-understood and well-annotated dataset. Moroever, this work is designed for running on modest resources (in my case, a gaming laptop with 1 GPU). The computational details are summarized in Table 1 below:
 
