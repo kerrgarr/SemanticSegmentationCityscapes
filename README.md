@@ -50,6 +50,9 @@ SemanticSegmentationCityscapes/
       utils.py
       special_transforms.py
    ```
+   
+   Check out **Create_Data.ipynb** to automate the creation of the folder and files for small_dataset/
+   
  ---------------------------------------------------------------------------------------
 ## Computational Details
 
