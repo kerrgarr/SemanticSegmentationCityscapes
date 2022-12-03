@@ -162,9 +162,10 @@ To use the full dataset, simply choose "full" in the create_directories function
 
 For example:
  
-<code> create_directories(gtFineDIR_train, DEST_ROOT_Train, "full") </code>
-<code> create_directories(ImgDIR_train, DEST_ROOT_Train, "full") </code>
-
+```
+create_directories(gtFineDIR_train, DEST_ROOT_Train, "full") 
+create_directories(ImgDIR_train, DEST_ROOT_Train, "full")
+```
 
 
 Running on the full dataset will increase the runtime, but will require fewer epochs to achieve more accurate results. More data is better than more epochs. :) 
