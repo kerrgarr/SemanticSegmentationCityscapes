@@ -9,16 +9,18 @@ Another crucial piece of this study was to find a well-annotated multi-class dat
 
 The main questions I want to answer for myself are:
 
-* How simple is it to run an image segmentation model on a real-world dataset on my gaming laptop ? 
-  (**Answer:** not too hard. Yay!)
-* How easy is it to find and download an interesting dataset for this task ? How much useful data for this task is really available for free ? 
+* How simple is it to run a semantic segmentation model on a **real-world dataset** using my gaming laptop ? 
+  (**Answer:** Not too hard. Yay! But achieving decent accuracy requires a lot of work tuning different hyperparameters.)
+
+* How easy is it to **find and download an interesting dataset** for this task ? How much useful data for this task is really available for free ? 
   (**Answer:** Not nearly as easy as I thought and many datasets require you to jump through hoops to download them. Argh.)
-* How easy is it to construct and understand such a model ? 
+
+* How easy is it to **construct and understand** a semantic segmentation model ? 
   (**Answer:** Again, not too difficult. Yay!)
-* What image segmentation models are currently considered state-of-the-art ? How do these perform when compared to a simple UNet ? 
+
+* What semantic segmentation models are currently considered **state-of-the-art** ? How do these perform when compared to a simple UNet ? 
   (**Answer:** DeepLabV3+, ERFNet, PSPNet, etc. have been developed most recently; we focus on DeepLabV3+ here.)
-* Can I achieve decent results on my laptop? 
-  (**Answer:** Yes, but requires a lot of work tuning different hyperparameters. Not too shocking.)
+
 
 ___________________________________
 
