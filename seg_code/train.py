@@ -99,11 +99,8 @@ def train(args):
 
 def log(logger, imgs, lbls, logits, global_step):
     logger.add_image('image', imgs[0], global_step)
-    logger.add_image('label', np.array(dense_transforms.label_to_pil_image(lbls[0].cpu()).
-                                             convert('RGB')), global_step, dataformats='HWC')
-    logger.add_image('prediction', np.array(dense_transforms.
-                                                  label_to_pil_image(logits[0].argmax(dim=0).cpu()).
-                                                  convert('RGB')), global_step, dataformats='HWC')
+    logger.add_image('label', np.array(SegT.label_to_pil_image(lbls[0].cpu()).convert('RGB')), global_step, dataformats='HWC')
+    logger.add_image('prediction', np.array(SegT.label_to_pil_image(logits[0].argmax(dim=0).cpu()).convert('RGB')), global_step, dataformats='HWC')
 
 if __name__ == '__main__':
     import argparse
