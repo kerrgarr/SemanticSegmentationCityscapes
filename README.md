@@ -6,6 +6,20 @@ The motivation for this project is to explore various different models for seman
 
 Another crucial piece of this study was to find a well-annotated multi-class dataset suitable for semantic segmentation. The Cityscapes dataset was chosen because it is well-understood, well-annotated, and easy to download free of charge (details are given below). 
 
+
+The main questions I want to answer for myself are:
+
+* How simple is it to run an image segmentation model on a real-world dataset on my gaming laptop ? 
+* (**Answer:** not too hard. Yay!)
+* How easy is it to find and download an interesting dataset for this task ? How much useful data for this task is really available for free ? 
+* (**Answer:** Not nearly as easy as I thought and many datasets require you to jump through hoops to download them. Argh.)
+* How easy is it to construct and understand such a model ? 
+* (**Answer:** Again, not too difficult. Yay!)
+* What image segmentation models are currently considered state-of-the-art ? How do these perform when compared to a simple UNet ? 
+* (**Answer:** DeepLabV3+, ERFNet, PSPNet, etc. have been developed most recently; we focus on DeepLabV3+ here.)
+* Can I achieve decent results on my laptop? 
+* (**Answer:** Yes, but requires a lot of work tuning different hyperparameters.)
+
 ___________________________________
 
 ## Cityscapes Dataset
@@ -26,7 +40,7 @@ The leftmg8bit_trainvaltest.zip dataset contains the original 2048x1024 images o
 
 After unzipping these files, you will find the subdirectories: **train**, **val**, and **test**. We focus on the files contained in train and val folders.
 
-From these datasets, a smaller subset was created from the Hamburg data (in train/Hamburg/) and Frankfurt data (in val/Frankfurt/). 
+From these datasets, a smaller subset was created from the Hamburg data (in train/Hamburg/) and Frankfurt data (in val/Frankfurt/). The reason for using a smaller subset was to speed the runtime for training the models so as to achieve some preliminary results. (Of course, training on the full dataset will improve the model performance.)
 
  Your directory structure should look like this (for logging later on, optionally add a folder called myfcn_test or whichever name you prefer.)
 
