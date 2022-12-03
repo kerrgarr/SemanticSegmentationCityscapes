@@ -156,7 +156,7 @@ Figure 5. Model performance. Comparison of segmentation maps predicted for each 
 ____________________________
 ## To-DO List
 
-Clearly the results above aren't superb. To improve the models' results, using the full dataset would of course be advantageous. Furthermore, increasing the input image resolution would likely improve the results (the data augmentation techniques used here may be too aggressive). Running the code without any data augmentation (only resizing to 3x128x128) may require reducing the **batch size to 2** to prevent CUDA out of memory errors. Implementing a learning rate scheduler would also be useful. 
+Clearly the results above aren't superb. To improve the models' results, using the full dataset would of course be advantageous. Furthermore, increasing the input image resolution would likely improve the results (the data augmentation techniques used here may be too aggressive). However, for my experiments with increasing the image resolution I also had to decrease the **batch size to 2** to prevent CUDA out of memory errors (you may not encounter this issue on your system). 
 
 To use the full dataset, simply choose "full" in the create_directories function in Create_Data.ipynb file.
 
@@ -168,6 +168,8 @@ create_directories(ImgDIR_train, DEST_ROOT_Train, "full")
 <\code>
 
 Running on the full dataset will increase the runtime, but will require fewer epochs to achieve more accurate results. More data is better than more epochs. :) 
+ 
+ Here are a few ideas to try:
  
 - [ ] Increase the dataset size
 - [ ] Increase input image resolution
