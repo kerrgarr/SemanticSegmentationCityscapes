@@ -6,8 +6,9 @@ The motivation for this project is to explore various different models for seman
 
 Another crucial piece of this study was to find a well-annotated multi-class dataset suitable for semantic segmentation. The Cityscapes dataset was chosen because it is well-understood, well-annotated, and easy to download free of charge (details are given below). 
 
+** Personal Motivation **
 
-The main questions I want to answer for myself are:
+In doing this work, the main questions I wanted to answer for myself are:
 
 * How practical is it to run a semantic segmentation model on a **real-world dataset** using my gaming laptop (1 GPU) ? 
   (**Answer:** Quite practical and many people do it this way.)
