@@ -1,4 +1,4 @@
-# Image Segmentation on small subset of Cityscapes
+# Image Segmentation on Cityscapes Dataset
 
 ## Objective
 
