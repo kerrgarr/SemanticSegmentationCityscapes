@@ -31,7 +31,7 @@ ___________________________________
 Download the dataset here: 
 
 **Cityscapes: Semantic Understanding of Urban Street Scenes.** https://www.cityscapes-dataset.com/downloads
-(Note: You need to register to download the files.)
+(Note: You need to register to download the files, but it's relatively painless.)
 
 Given that these are large files of several or more Gigabytes, it is important for the practitioner to judiciously select only the data needed for the specific task of interest. The focus of this study is to test the performance of different models for semantic segmentation, so the following datasets (file size in paratheses) were downloaded: **gtFine_trainvaltest.zip** (241MB) and **leftmg8bit_trainvaltest.zip** (11GB). 
 
