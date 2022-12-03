@@ -152,6 +152,30 @@ The results that I've collected according to the details in Table 1 are shown in
 
 ![image info](./pics/Figure_5all_deep.png)
 Figure 5. Model performance. Comparison of segmentation maps predicted for each of the models (DeepLabV3+, U-Net, and my_FCN) after 500 epochs are shown in the left-side panel. The right-side panel shows the evolution of the training loss (top right) and IoU values on the validation data (bottom right).
+
+____________________________
+## To-DO List
+
+Clearly the results above aren't superb. To improve the models, using the full dataset would of course be advantageous. Furthermore, increasing the input image resolution would likely improve the results (the data augmentation techniques used here may be too aggressive). Running the code without any data augmentation (only resizing to 3x128x128) may require reducing the **batch size to 2** to prevent CUDA out of memory errors. Implementing a learning rate scheduler would also be useful. 
+
+To use the full dataset, simply choose "full" in the create_directories function in Create_Data.ipynb file.
+
+<code>
+ 
+create_directories(gtFineDIR_train, DEST_ROOT_Train, "full")
+create_directories(ImgDIR_train, DEST_ROOT_Train, "full")
+
+<\code>
+
+Running on the full dataset will increase the runtime, but will require fewer epochs to achieve more accurate results. More data is better than more epochs. :) 
+ 
+- [ ] Increase the dataset size
+- [ ] Increase input image resolution
+- [ ] Implement learning rate scheduler
+- [ ] Test different data augmentation techniques (or choose none at all)
+- [ ] Change the batch size
+- [ ] Test out a different encoder in DeepLab architecture
+ 
 ____________________________________________________________________________________
 ## References:
 
