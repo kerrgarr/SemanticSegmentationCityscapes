@@ -195,7 +195,8 @@ Running on the full dataset will increase the runtime, but will require fewer ep
 - [ ] Test different data augmentation techniques (or choose none at all)
 - [ ] Change the batch size
 - [ ] Test out a different encoder in DeepLab architecture
- 
+
+## Thank you! I hope you found this work useful for your own explorations!
 ____________________________________________________________________________________
 ## References:
 
