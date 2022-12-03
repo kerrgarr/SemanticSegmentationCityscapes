@@ -11,7 +11,7 @@ Another crucial piece of this study was to find a well-annotated multi-class dat
 In doing this work, the main questions I wanted to answer for myself are:
 
 * How practical is it to run a semantic segmentation model on a **real-world dataset** using my gaming laptop (1 GPU) ? 
-  (**Answer:** Quite practical and many people do it this way.)
+  (**Answer:** Quite practical and many people do it this way; however, I ran into CUDA out-of-memory errors when trying to work with high-res inputs.)
 
 * How easy is it to **find and download an interesting dataset** for this task ? How much useful data for this task is really available for free ? 
   (**Answer:** Not nearly as easy as I thought and many datasets require you to jump through hoops to download them; hence, why data collection and engineering is big business.)
@@ -20,7 +20,7 @@ In doing this work, the main questions I wanted to answer for myself are:
   (**Answer:** UNet is fairly intuitive; DeepLab is less so, imho.)
 
 * What semantic segmentation models are currently considered **state-of-the-art** ? How do these perform when compared to a simple UNet ? 
-  (**Answer:** DeepLabV3+, ERFNet, PSPNet, etc. have been developed most recently; I focused on DeepLabV3+ here. It is optimized for learning on high-resolution data.)
+  (**Answer:** DeepLabV3+, ERFNet, PSPNet, etc. have been developed most recently; I focused on DeepLabV3+ here. It is optimized for learning on high-resolution data, which unfortunately may require more substantial VRAM than my current hardware. DeepLabV3+ did not outperform UNet in this current study on low-res inputs.)
 
 
 ___________________________________
