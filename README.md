@@ -20,7 +20,7 @@ In doing this work, the main questions I wanted to answer for myself are:
   (**Answer:** UNet is fairly intuitive; DeepLab is less so, imho.)
 
 * What semantic segmentation models are currently considered **state-of-the-art** ? How do these perform when compared to a simple UNet ? 
-  (**Answer:** DeepLabV3+, ERFNet, PSPNet, etc. have been developed most recently; I focused on DeepLabV3+ here. It is optimized for learning on high-resolution data, which unfortunately may require more substantial VRAM than my current hardware. Alas, DeepLabV3+ did not outperform UNet in this current study which is based on using low-res inputs.)
+  (**Answer:** DeepLabV3+, ERFNet, PSPNet, etc. have been developed most recently; I focused on DeepLabV3+ here. It is optimized for learning on high-resolution data, which unfortunately may require more substantial VRAM than my current hardware. Consequently, DeepLabV3+ did not outperform UNet in this current study since it is based on using low-res inputs.)
 
 
 ___________________________________
