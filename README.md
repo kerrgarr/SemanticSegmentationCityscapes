@@ -160,12 +160,12 @@ Clearly the results above aren't superb. To improve the models' results, using t
 
 To use the full dataset, simply choose "full" in the create_directories function in Create_Data.ipynb file.
 
-<code>
+For example:
  
-create_directories(gtFineDIR_train, DEST_ROOT_Train, "full")
-create_directories(ImgDIR_train, DEST_ROOT_Train, "full")
+<code> create_directories(gtFineDIR_train, DEST_ROOT_Train, "full") </code>
+<code> create_directories(ImgDIR_train, DEST_ROOT_Train, "full") </code>
 
-<\code>
+
 
 Running on the full dataset will increase the runtime, but will require fewer epochs to achieve more accurate results. More data is better than more epochs. :) 
  
