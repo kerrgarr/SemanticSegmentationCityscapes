@@ -6,23 +6,6 @@ The motivation for this project is to explore various different models for seman
 
 Another crucial piece of this study was to find a well-annotated multi-class dataset suitable for semantic segmentation. The Cityscapes dataset was chosen because it is well-understood, well-annotated, and easy to download free of charge (details are given below). 
 
-** Personal Motivation **
-
-In doing this work, the main questions I wanted to answer for myself are:
-
-* How practical is it to run a semantic segmentation model on a **real-world dataset** using my gaming laptop (1 GPU) ? 
-  (**Answer:** Quite practical and many people do it this way; however, I ran into CUDA out-of-memory errors when trying to work with high-res inputs.)
-
-* How easy is it to **find and download an interesting dataset** for this task ? How much useful data for this task is really available for free ? 
-  (**Answer:** Not nearly as easy as I thought and many datasets require you to jump through hoops to download them; hence, why data collection and engineering is big business.)
-
-* How easy is it to **construct and understand** a semantic segmentation model ? 
-  (**Answer:** UNet is fairly intuitive; DeepLab is less so, imho.)
-
-* What semantic segmentation models are currently considered **state-of-the-art** ? How do these perform when compared to a simple UNet ? 
-  (**Answer:** DeepLabV3+, ERFNet, PSPNet, etc. have been developed most recently; I focused on DeepLabV3+ here. It is optimized for learning on high-resolution data, which unfortunately may require more substantial VRAM than my current hardware. Consequently, DeepLabV3+ did not outperform UNet in this current study since it is based on using low-res inputs.)
-
-
 ___________________________________
 
 ## Cityscapes Dataset
@@ -208,7 +191,23 @@ Running on the full dataset will increase the runtime, but will require fewer ep
 - [ ] Change the batch size
 - [ ] Test out a different encoder in DeepLab architecture
 
-## Thank you!
+** Personal Motivation **
+
+In doing this work, the main questions I wanted to answer for myself were:
+
+* How practical is it to run a semantic segmentation model on a **real-world dataset** using my gaming laptop (1 GPU) ? 
+  (**Answer:** Quite practical and many people do it this way; however, I ran into CUDA out-of-memory errors when trying to work with high-res inputs.)
+
+* How easy is it to **find and download an interesting dataset** for this task ? How much useful data is available for free ? 
+  (**Answer:** Not nearly as easy as I thought and many datasets require you to jump through hoops to download them; still, there are some interesting datasets out there if you search hard enough.)
+
+* How easy is it to **construct and understand** a semantic segmentation model ? 
+  (**Answer:** UNet is fairly straightforward; DeepLabV3+ is less so and involves many layers and modules.)
+
+* What semantic segmentation models are currently considered **state-of-the-art** ? How do these perform when compared to a simple UNet ? 
+  (**Answer:** DeepLabV3+, ERFNet, PSPNet, etc. have been developed most recently (circa 2018); I focused on DeepLabV3+ here. The DeepLab models are optimized for learning on high-resolution data, which unfortunately may require more substantial VRAM than my current laptop's hardware. Consequently, DeepLabV3+ did not outperform UNet in this current study since this work was based on using very low-res inputs.)
+  
+## Thank you for checking out my repo!
 ____________________________________________________________________________________
 ## References:
 
