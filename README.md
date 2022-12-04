@@ -70,6 +70,8 @@ SemanticSegmentationCityscapes/
    
    Check out **Create_Data.ipynb** to automate the creation of the folder and files for small_dataset/
    
+   (You can also create the test dataset, as outlined in Create_Data.ipynb and test your results using test.py.)
+   
  ---------------------------------------------------------------------------------------
 ## Computational Details
 
