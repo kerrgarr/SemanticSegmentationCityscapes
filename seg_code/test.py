@@ -3,9 +3,8 @@ import numpy as np
 import torchvision.transforms as T
 from . import special_transforms as SegT
 from .models import UNet, my_FCN, DeepLabv3_plus, save_model, model_factory
-from .utils import load_data, FOCAL_LOSS_WEIGHTS, ConfusionMatrix, N_CLASSES
+from .utils import load_data, ConfusionMatrix
 import torch.utils.tensorboard as tb
-import time
 
 
 def test(args):
@@ -43,8 +42,8 @@ def test(args):
         test_logger.add_scalar('average_accuracy', test_conf.average_accuracy, global_step)
         test_logger.add_scalar('iou', test_conf.iou, global_step)
 
-    print('test acc = %0.3f \t test iou = %0.3f' %
-        (test_conf.global_accuracy, test_conf.iou))
+    print('test global acc = %0.3f \t test avg acc = %0.3f \t test iou = %0.3f' %
+        (test_conf.global_accuracy, test_conf.average_accuracy, test_conf.iou))
         
 
 def log(logger, imgs, lbls, logits, global_step):
